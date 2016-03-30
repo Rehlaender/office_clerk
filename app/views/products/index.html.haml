@@ -14,15 +14,15 @@
       .col-md-2
         = link_to  "Nuevo producto" , new_product_path , :class => "btn btn-primary"
   .col-md-3
-  Filtrar por:
+
 .row
   .col-md-9
     %div
       %table.table.table-condensed
         %thead
           %tr
-            %th=t( "picture")
-            %th= sort_link [:office,@q], :ean
+            %th="Imagen"
+            %th= sort_link [:office,@q], "Clave unica"
             %th= sort_link [:office,@q], :name
             %th= sort_link [:office,@q], :price
             %th= sort_link [:office,@q], :cost
@@ -57,6 +57,7 @@
                   %td= link_to t(:edit) ,edit_product_path(product), :title => t(:edit)
     = paginate @products
   .col-md-3
+    %h4= Filtrar por:
     = search_form_for @q, :html => { :class => "form-horizontal" }, :method => :get do |f|
       .form-group
         .input-group
