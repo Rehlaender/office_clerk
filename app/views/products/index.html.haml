@@ -9,11 +9,12 @@
             %br
             = t(:choose_product_for_basket)
           -else
-            = t(:products)
+            = "Productos"
           = paginate @products
       .col-md-2
-        = link_to  t(:new) + ' ' + t(:product) , new_product_path , :class => "btn btn-primary"
-  .col-md-3    
+        = link_to  "Nuevo producto" , new_product_path , :class => "btn btn-primary"
+  .col-md-3
+  Filtrar por:
 .row
   .col-md-9
     %div
@@ -61,58 +62,58 @@
         .input-group
           - if params[:basket]
             = hidden_field_tag :basket , params[:basket]
-            = f.text_field :name_or_product_name_cont, :class => "form-control" , :placeholder => t(:name)
+            = f.text_field :name_or_product_name_cont, :class => "form-control" , :placeholder => "Nombre"
           -else
-            = f.text_field :name_cont, :class => "form-control" , :placeholder => t(:name)
+            = f.text_field :name_cont, :class => "form-control" , :placeholder => "Nombre"
           %span.input-group-addon
             =t(:online)
             = f.radio_button :online_eq , true
       .form-group
         .input-group
-          = f.text_field :summary_cont , :class => "form-control" , :placeholder => t(:summary)
+          = f.text_field :summary_cont , :class => "form-control" , :placeholder => "Resumen"
           %span.input-group-addon
-            =t(:blanks)
+            = "Vacio"
             = f.radio_button :summary_blank , true
       .form-group
         .input-group
-          = f.text_field :description_cont , :class => "form-control" , :placeholder =>  t(:description)
+          = f.text_field :description_cont , :class => "form-control" , :placeholder =>  "Descripcion"
           %span.input-group-addon
-            =t(:blanks)
+            = "Vacio"
             = f.radio_button :description_blank , true
       .form-group
         .col-md-6
-          = f.text_field :ean_cont , :class => "form-control" , :placeholder => t(:ean)
+          = f.text_field :ean_cont , :class => "form-control" , :placeholder => "Clave unica"
         .col-md-6
-          = f.text_field :scode_cont , :class => "form-control" , :placeholder => t(:scode)
+          = f.text_field :scode_cont , :class => "form-control" , :placeholder => "Clave segun proveedor"
       .form-group
         .col-md-4
-          = f.label(:price)
+          = f.label("Precio")
         .col-md-4
           = f.text_field :price_gteq , :class => "form-control"
         .col-md-4
           = f.text_field :price_lteq , :class => "form-control"
         .col-md-4
-          = f.label(:cost)
+          = f.label("Costo")
         .col-md-4
           = f.text_field :cost_gteq , :class => "form-control"
         .col-md-4
           = f.text_field :cost_lteq , :class => "form-control"
         .col-md-4
-          = f.label(:inventory)
+          = f.label("Inventario")
         .col-md-4
           = f.text_field :inventory_gteq , :class => "form-control"
         .col-md-4
           = f.text_field :inventory_lteq , :class => "form-control"
       .form-group
         .col-md-4
-          = f.label t(:supplier)
+          = f.label("Proveedores")
         .col-md-8
           = f.collection_select :supplier_id_eq, Supplier.all, :id, :supplier_name, {:include_blank => true}, :class=>"form-control"
       .form-group
         .col-md-4
-          = f.label t(:category)
+          = f.label("Categorias")
         .col-md-8
           = f.collection_select :category_id_eq, Category.all, :id, :name, {:include_blank => true}, :class=>"form-control"
-      = f.submit t(:filter), :class => "btn btn-success" , :id => :filter
-      = link_to  t(:cancel), products_path, :class => "btn btn-warning"
+      = f.submit "Filtrar", :class => "btn btn-success" , :id => :filter
+      = link_to  "Cancelar", products_path, :class => "btn btn-warning"
 .product_index_end
