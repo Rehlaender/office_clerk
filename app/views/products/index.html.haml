@@ -47,7 +47,7 @@
                 %td.price.text-right=euros(product.price)
                 %td.price.text-right=euros(product.cost)
                 %td.supplier
-                  =product.supplier.supplier_name + "/" if product.supplier 
+                  =product.supplier.supplier_name + " /" if product.supplier 
                   %br
                   =product.category.name if product.category
                 %td.inventory=product.inventory
