@@ -21,7 +21,7 @@
       %table.table.table-condensed
         %thead
           %tr
-            %th="Imagen"
+            %th= "Imagen"
             %th= sort_link [:office,@q], :ean
             %th= sort_link [:office,@q], :name
             %th= sort_link [:office,@q], :price
@@ -57,7 +57,7 @@
                   %td= link_to t(:edit) ,edit_product_path(product), :title => t(:edit)
     = paginate @products
   .col-md-3
-    %h4= Filtrar por:
+    %h2= "Filtrar por:"
     = search_form_for @q, :html => { :class => "form-horizontal" }, :method => :get do |f|
       .form-group
         .input-group
