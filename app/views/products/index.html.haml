@@ -23,17 +23,17 @@
           %tr
             %th= "Imagen"
             %th= sort_link [:office,@q], "Clave unica"
-            %th= sort_link [:office,@q], :name
-            %th= sort_link [:office,@q], :price
-            %th= sort_link [:office,@q], :cost
+            %th= sort_link [:office,@q], "Nombre"
+            %th= sort_link [:office,@q], "Precio"
+            %th= sort_link [:office,@q], "Costo"
             %th
-              =t(:supplier)
+              "Proveedor/"
               %br
-              =t(:category)
-            %th= sort_link [:office,@q], :inventory
+              "Categoria"
+            %th= sort_link [:office,@q], "Inventario"
             %th
               %label.checkbox
-                = @product_scope.length.to_s + " " + t(:products)
+                = @product_scope.length.to_s + " " + "productos"
         %tbody
           - @products.each do |product|
             -next if params[:basket] and product.line?
