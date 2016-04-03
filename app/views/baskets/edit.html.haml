@@ -7,7 +7,7 @@
   .col-md-8.ean_form
     = label_tag :ean
     = form_tag ean_basket_path(@basket)  do |f|
-      = text_field_tag :ean , "" , :autofocus => true , :class => "ean_field" , :size => 45
+      = text_field_tag :ean , "" , :autofocus => true , :class => "ean_field" , :size => 45, :label => "Clave unica de producto a agregar"
       = submit_tag t(:search) ,  :class => "btn btn-xs ean_submit"
   .col-md-3
     = t(:discount )
