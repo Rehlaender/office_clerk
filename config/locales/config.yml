@@ -2,8 +2,8 @@ config:
   shipping:
     pickup:
       class: "OfficeClerk::Pickup"
-      name: Nouto myymälästämme
+      name: PICPI
   defaults:
-    tax: 24.0
+    tax: 0.0
   print_styles: ""
-  mail_buttons: "confirm cancel paid shipped"
+  mail_buttons: "Confirmar Cancelar Pagado Enviado"
