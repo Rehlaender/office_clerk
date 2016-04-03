@@ -1,16 +1,16 @@
 %li{:class => params[:controller] == "products" && "active" }
-  = link_to t(:products), products_path
+  = link_to "Productos", products_path
 %li{:class => params[:controller] == "baskets" && "active" }
-  = link_to t(:baskets), baskets_path
+  = link_to "Compras", baskets_path
 %li{:class => params[:controller] == "orders" && "active" }
-  = link_to t(:orders), orders_path
+  = link_to "Ordenes", orders_path
 %li{:class => params[:controller] == "purchases" && "active" }
-  = link_to t(:purchases), purchases_path
+  = link_to "Gastos", purchases_path
 %li{:class => params[:controller] == "categories" && "active" }
-  = link_to t(:categories), categories_path
+  = link_to "Categorias", categories_path
 %li{:class => params[:controller] == "suppliers" && "active" }
-  = link_to t(:suppliers), suppliers_path
+  = link_to "Proveedores", suppliers_path
 %li{:class => params[:controller] == "clerks" && "active" }
-  = link_to t(:clerks), clerks_path
+  = link_to "Usuarios", clerks_path
 %li{:class => params[:controller] == "manage" && "active" }
-  = link_to t(:manage), manage_all_path
+  = link_to "Reportes", manage_all_path
