@@ -7,39 +7,39 @@
     .col-md-8
       .row
         .col-md-6
-          = f.text_field :name
+          = f.text_field :name , :label => "Nombre"
         .col-md-6
           - unless @product.product_id
             = f.text_field :link
       .row
         .col-md-12
-          = f.text_area :description, :rows => 10
+          = f.text_area :description, :label => "Descripcion", :rows => 10
       .row
         .col-md-6
           = image_tag @product.main_picture.url(:list)
-          = f.file_field :main_picture , :label => t(:main_picture)
+          = f.file_field :main_picture , :label => "Foto principal"
         .col-md-6
           = image_tag @product.extra_picture.url(:list)
-          = f.file_field :extra_picture , :label => t(:extra_picture)
+          = f.file_field :extra_picture , :label => "Foto extra"
     .col-md-4
       .row
         .col-md-12
-          = f.text_area :summary, :rows => 4
+          = f.text_area :summary, :label => "Resumen", :rows => 4
         .col-md-6
-          = f.text_field :price
-          = f.text_field :cost
-          = f.text_field :scode
+          = f.text_field :price, :label => "Precio"
+          = f.text_field :cost, :label => "Costo"
+          = f.text_field :scode, :label => "Id segun proveedor"
         .col-md-6
-          = f.text_field :weight
-          = f.text_field :ean
-          = f.text_field :tax
+          = f.text_field :weight, :label => "Peso"
+          = f.text_field :ean, :label => "Clave unica"
+          = f.text_field :tax, :class => "hide"
       .row
         .col-md-6
-          = f.select :supplier_id,  Supplier.all.order(:supplier_name).map { |c| [c.supplier_name, c.id ] }, :prompt => t(:select)
+          = f.select :supplier_id,  Supplier.all.order(:supplier_name).map { |c| [c.supplier_name, c.id ] }, :prompt => "Selecciona", :label => "Proveedor"
         .col-md-6
-          = f.select :category_id , Category.all.order(:name).map { |c| [c.name, c.id ] }, :prompt => t(:select)
+          = f.select :category_id , Category.all.order(:name).map { |c| [c.name, c.id ] }, :prompt => "Selecciona", :label => "Categoria"
         .col-md-4
-          = f.check_box :online
+          = f.check_box :online, :label => "En linea?"
         .col-md-8
           = f.submit :class => "btn btn-success"
           -if @product.product_id
