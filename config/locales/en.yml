@@ -30,12 +30,12 @@ en:
         name: Nombre completo
         note: Nota
         number: Numero de orden
-        ordered_on: Ordenado en
+        ordered_on: Ordenado el
         paid_on: Pagado el
         password: Contraseña
         password_confirmation: Confirme contraseña
         phone: Telefono
-        shipped_on: Entregado en
+        shipped_on: Entregado el
         street: Calle y numero
         total: Total
       product:
@@ -176,7 +176,7 @@ en:
   shipment_info: Info de envio
   shipment_price: Precio de envio
   shipment_type: Tipo de envio
-  shipped_on: Entregado en
+  shipped_on: Entregado el
   shop: Tienda
   shop_link: En tienda
   show: Mostrar
