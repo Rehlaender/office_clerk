@@ -2,7 +2,7 @@
 %html{:lang => (I18n.locale || I18n.default_locale)}
   %head
     %meta{:charset => "utf-8"}/
-    %title= content_for?(:title) ? content_for(:title) :  "Office Clerk"
+    %title= content_for?(:title) ? content_for(:title) :  "Picpi Admin"
     = include_gon(:init => true)
     = stylesheet_link_tag "office_clerk" ,  :media => :all
     -office_assets.each do |ass|
