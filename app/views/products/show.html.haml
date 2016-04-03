@@ -10,12 +10,12 @@
     .row.tausta
       .col-md-6
         %p
-          %b= t(:main_picture) + " : "
+          %b= "Imagen principal" + " : "
           %br
           = image_tag @product.main_picture.url
       .col-md-6
         %p
-          %b= t(:extra_picture) + " : "
+          %b= "Imagen extra" + " : "
           %br
           = image_tag @product.extra_picture.url
     .row
@@ -42,16 +42,16 @@
         %p
           %b= "En inventario" + " : "
           = @product.inventory
-        %p
+        %p.hide
           %b= t(:stock_level) + " : "
           = in_place @product , :stock_level
         %p
           %b= "Proveedor" + " : "
           = link_to @product.supplier.supplier_name ,supplier_path(@product.supplier) if @product.supplier
-        %p
+        %p.hide
           %b= t(:scode) + " : "
           = in_place @product , :scode
-        %p
+        %p.hide
           %b= t(:tax_percent) + " : "
           = in_place @product , :tax
   .col-md-4
