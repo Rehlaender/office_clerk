@@ -113,7 +113,7 @@ en:
   extra_picture: Foto extra
   filter: Filtro
   first_name: Primer nombre
-  fix_errors: No hay errores
+  fix_errors: Hay errores 
   inventorized: Se envio al inventario
   inventory: Inventario
   item_removed: Se quito del inventario
@@ -132,7 +132,7 @@ en:
   name_contains: Nombre del contenedor
   new: Nuevo
   new_item: Nuevo articulo
-  nolla: Cero
+  nolla: Gratis
   not_online: No esta en linea
   note: Nota
   online: En linea
@@ -186,7 +186,7 @@ en:
   sign_up: Registrarse
   signed_in: Iniciaste sesion
   signed_out: Cerrasted sesion
-  signed_up: Registrado
+  signed_up: Iniciado
   stock_level: Nivel de stock
   street: Calle
   street1: Calle1
