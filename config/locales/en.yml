@@ -1,210 +1,210 @@
 ---
 en:
-  actions: Actions
+  actions: Acciones
   activerecord:
     attributes:
       basket:
-        created_at: Created
-        total_price: Price
-        type: Type
+        created_at: Creada
+        total_price: Precio
+        type: Tipo
       category:
-        category: Parent
-        description: Description
+        category: Padre
+        description: Descripcion
         link: Link
-        name: Name
-        online: Online
-        position: Position
-        summary: Summary
+        name: Nombre
+        online: En linea
+        position: Posicion
+        summary: Resumen
       clerk:
-        city: City
+        city: Ciudad
         email: Email
-        name: Name
-        password: Passord
-        password_confirmation: Password confirmation
-        phone: Phone
-        street: Street
+        name: Nombre
+        password: Contraseña
+        password_confirmation: Confirme contraseña
+        phone: Telefono
+        street: Calle
       order:
-        canceled_on: Canceled on
-        city: Postcode and city
+        canceled_on: Cancelado en
+        city: Ciudad y codigo postal
         email: Email
-        name: Full name
-        note: Note
-        number: Order number
-        ordered_on: Ordered on
-        paid_on: Paid on
-        password: Passord
-        password_confirmation: Password confirmation
-        phone: Phonenumber
-        shipped_on: Shipped on
-        street: Street and number
+        name: Nombre completo
+        note: Nota
+        number: Numero de orden
+        ordered_on: Ordenado en
+        paid_on: Pagado el
+        password: Contraseña
+        password_confirmation: Confirme contraseña
+        phone: Telefono
+        shipped_on: Enviado en
+        street: Calle y numero
         total: Total
       product:
-        category: Category
-        cost: Cost
-        description: Description
-        ean: Ean
-        inventory: Inventory
-        name: Name
-        online: online
-        price: Price
-        scode: Supplier code
+        category: Categoria
+        cost: Costo
+        description: Descripcion
+        ean: Clave unica
+        inventory: En inventario
+        name: Nombre
+        online: En linea
+        price: Precio
+        scode: Id segun proveedor
         stock_level: Stock aim
-        summary: Summary
-        supplier: Suppier
+        summary: Resumen
+        supplier: Proveedor
         tax: Tax rate
-        weight: Weight
+        weight: Peso
       purchase:
-        name: Name
-        ordered_on: Ordered on
-        received_on: Received on
+        name: Nombre
+        ordered_on: Ordenado en
+        received_on: Reibido en
       supplier:
-        city: City
-        name: Name
-        phone: Phone
-        street: Street
-        supplier_name: Supplier
+        city: Ciudad
+        name: Nombre
+        phone: Telefono
+        street: Calle
+        supplier_name: Proveedor
     models:
-      basket: Cart
-      category: Product group
-      clerk: User
-      order: Order
-      product: Product
-      purchase: Purchase
-      supplier: Supplier
-  add: Add
-  add_to_basket: Add to basket
-  address: Adress
+      basket: Carrito
+      category: Categoria
+      clerk: Usuario
+      order: Orden
+      product: Producto
+      purchase: Compra
+      supplier: Proveedor
+  add: Agregar
+  add_to_basket: Agregar al carrito
+  address: Direccion
   admin: Admin
-  are_you_sure: Are you sure?
-  back: Back
-  basket: Basket
-  basket_empty: Basket is empty
-  basket_locked: Basket is locked, cancel to change
-  baskets: Baskets
-  blanks: Blanks
-  cancel: Cancel
-  cancel_confirmation: Cancelling will return stock and zero shipment date. You can then delete the order or keep editing.
-  canceled_on: Canceled on
-  categories: Product Categories
-  category: Product Category
-  checkout: Checkout
-  choose_product_for_basket: Choose product for basket
-  choose_shipment: Choose shipment
-  city: City
-  clerk: User
-  clerks: Users
-  contact: Contact
-  contact_details: Contact details
-  cost: Cost
-  count: Count
-  country: Country
-  create: Luo
-  create_success: Successfully created
-  customer: Customer
-  delete: Delete
-  deleted: Deleted
-  description: Description
-  destroy: Destroy
-  discount: Discount
-  ean: Ean
-  edit: Edit
+  are_you_sure: Estas seguro?
+  back: Regresar
+  basket: Carrito
+  basket_empty: El carrito esta vacio
+  basket_locked: El carrito esta bloqueado, cancel para cambiar
+  baskets: Carritos
+  blanks: Vacios
+  cancel: Cancelar
+  cancel_confirmation: Cancelar regresara el stock y pondra en cero la fecha, puedes borrar la orden o seguir editando.
+  canceled_on: Cancelado en
+  categories: Categorias
+  category: Categoria
+  checkout: Chequeo
+  choose_product_for_basket: Eliga productos para el carrito
+  choose_shipment: Escoga envio
+  city: Ciudad
+  clerk: Usuario
+  clerks: Usuarios
+  contact: Contacto
+  contact_details: Detalles de contacto
+  cost: Costo
+  count: Cuenta
+  country: Pais
+  create: Crear
+  create_success: Creado
+  customer: Cliente
+  delete: Borrar
+  deleted: Borrado
+  description: Descripcion
+  destroy: Destruir
+  discount: Descuento
+  ean: Clave unica
+  edit: Editar
   email: Email
   error: Error
-  extra_picture: Extra picture
-  filter: Filter
-  first_name: First Name
-  fix_errors: There are errors below
-  inventorized: Inventorized
-  inventory: Inventory
-  item_removed: Item removed
-  items: Items
-  last_name: Last Name
+  extra_picture: Foto extra
+  filter: Filtro
+  first_name: Primer nombre
+  fix_errors: No hay errores
+  inventorized: Se envio al inventario
+  inventory: Inventario
+  item_removed: Se quito del inventario
+  items: Articulos
+  last_name: Apellido
   link: Link
-  locked: Locked
-  made_offline: taken offline
-  made_online: made online
-  main_picture: Main Picture
-  make_order: Make Order
-  make_purchase: Make Purchase
-  manage: Manage
-  may_be_blank: May be blank
-  name: Name
-  name_contains: Name contains
-  new: New
-  new_item: New product item
-  nolla: Zero prices
-  not_online: not online
-  note: Note
-  online: Online
-  order: Order
-  order_actions: Actions
+  locked: Bloqueado
+  made_offline: Se quito de online
+  made_online: Se puso online
+  main_picture: Foto principal
+  make_order: Realizar orden
+  make_purchase: Realizar compra
+  manage: Administrar
+  may_be_blank: Puede estar vacio
+  name: Nombre
+  name_contains: Nombre del contenedor
+  new: Nuevo
+  new_item: Nuevo articulo
+  nolla: Cero
+  not_online: No esta en linea
+  note: Nota
+  online: En linea
+  order: Orden
+  order_actions: Acciones
   order_button:
-    cancel: Cancel email
-    confirm: Send Confirmation Email
-    paid: Paid Mail
-    shipped: Ship Order Email
-  order_mail: Send email
-  order_number: Order Number
-  order_print: Print
-  ordered: Ordered
-  ordered_on: Ordered On
-  orders: Orders
-  pay: Pay
-  paid_on: Paid on
-  password: Password
-  payment_info: Payment info
-  phone: Phone
-  picture: Picture
+    cancel: Cancelar email
+    confirm: Enviar Email de confirmacion
+    paid: Pagado
+    shipped: Enviar email de orden
+  order_mail: Enviar email
+  order_number: Numero de orden
+  order_print: Imprimir
+  ordered: Ordenado
+  ordered_on: Ordenado en
+  orders: Ordenes
+  pay: Pagar
+  paid_on: Pagado en
+  password: Contraseña
+  payment_info: Info de pago
+  phone: Telefono
+  picture: Foto
   preview: Preview
-  price: Price
-  product: Product
-  product_added: Product added
-  product_has_inventory: Product has inventory
-  product_item: Product Item
-  product_line: Product Line
-  products: Products
-  purchase: Purchase
-  purchases: Purchases
-  quantity: Quantity
-  receive: Receive
-  received: Received
-  received_on: Received On
-  scode: Supplier code
-  search: Search
-  select: Select
-  ship: Ship
-  shipment_info: Shipment info
-  shipment_price: Shipment price
-  shipment_type: Shipment type
-  shipped_on: Shipped on
-  shop: Shop
-  shop_link: In Shop
-  show: Show
-  sign_in: Log in
-  sign_in_invalid: Invalid email or password
-  sign_out: Log out
-  sign_up: Sign up
-  signed_in: Logged in
-  signed_out: Logged out
-  signed_up: Signed up
-  stock_level: Stock aim
-  street: Street
-  street1: Street1
-  street2: Street2
-  summary: Summary
-  supplier: Supplier
-  suppliers: Suppliers
-  tax_percent: Tax percent
-  to_order: To order
-  to_purchase: To purchase
+  price: Precio
+  product: Producto
+  product_added: Producto añadido
+  product_has_inventory: El Producto tiene inventario
+  product_item: Articulo de producto
+  product_line: Linea de producto
+  products: Productos
+  purchase: Comprar
+  purchases: Compras
+  quantity: Cantidad
+  receive: Recibir
+  received: Recibido
+  received_on: Recibido en
+  scode: Codigo de proveedor
+  search: Buscar
+  select: Seleccionar
+  ship: Enviar
+  shipment_info: Info de envio
+  shipment_price: Precio de envio
+  shipment_type: Tipo de envio
+  shipped_on: Enviado en
+  shop: Tienda
+  shop_link: En tienda
+  show: Mostrar
+  sign_in: Iniciar sesion
+  sign_in_invalid: Mail invalido o contraseña
+  sign_out: Cerrar sesion
+  sign_up: Registrarse
+  signed_in: Iniciaste sesion
+  signed_out: Cerrasted sesion
+  signed_up: Registrado
+  stock_level: Nivel de stock
+  street: Calle
+  street1: Calle1
+  street2: Calle2
+  summary: Resumen
+  supplier: Proveedor
+  suppliers: Proveedores
+  tax_percent: Porcentaje de impuesto
+  to_order: A ordenar
+  to_purchase: A comprar
   total: Total
-  total_price: Total Price
-  total_tax: Taxes
-  update: Update
-  update_success: Successfully updated
+  total_price: Precio total
+  total_tax: Impuestos
+  update: Actualizar
+  update_success: Actualizado
   vat: Vat
-  weight: Weight
+  weight: Peso
   will_paginate:
-    next_label: Next &#8594;
+    next_label: Siguiente &#8594;
     page_gap: "&hellip;"
-    previous_label: "&#8592; Previous"
+    previous_label: "&#8592; Anterior"
