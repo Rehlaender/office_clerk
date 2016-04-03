@@ -21,32 +21,32 @@
     .row
       .col-md-6
         %p
-          %b= t(:price) + " : "
+          %b= "Precio" + " : "
           = in_place @product , :price , :display_with => :best_euros
         %p
-          %b= t(:cost) + " : "
+          %b= "Costo" + " : "
           = in_place @product , :cost , :display_with => :best_euros
         %p
-          %b= t(:category) + " : "
+          %b= "Categoria" + " : "
           = link_to @product.category.name , category_path(@product.category) if @product.category
         %p
-          %b= t(:link) + " : "
+          %b= "Link" + " : "
           = @product.link
         %p
-          %b= t(:ean) + " : "
+          %b= "Clave unica" + " : "
           = in_place @product , :ean
       .col-md-6
         %p
-          %b= t(:weight) + " : "
+          %b= "Peso" + " : "
           = in_place @product , :weight
         %p
-          %b= t(:inventory) + " : "
+          %b= "En inventario" + " : "
           = @product.inventory
         %p
           %b= t(:stock_level) + " : "
           = in_place @product , :stock_level
         %p
-          %b= t(:supplier) + " : "
+          %b= "Proveedor" + " : "
           = link_to @product.supplier.supplier_name ,supplier_path(@product.supplier) if @product.supplier
         %p
           %b= t(:scode) + " : "
@@ -56,10 +56,10 @@
           = in_place @product , :tax
   .col-md-4
     %p
-      %b= t(:summary) + " : "
+      %b= "Resumen" + " : "
       = in_place @product , :summary
     %p
-      %b= t(:description) + " : "
+      %b= "Descripcion" + " : "
       = in_place @product , :description , :as => :textarea
   .col-md-4
     =render :partial => "products/preview_box" , :locals => {:product => @product}
@@ -67,11 +67,11 @@
 %br
 .row.product_show_row_buttons
   .col-md-2
-    = link_to t(:edit), edit_product_path(@product), :class => "btn btn-success"
+    = link_to "Editar", edit_product_path(@product), :class => "btn btn-success"
   .col-md-2
-    = link_to t(:delete) , product_path(@product), :method => :delete , :class => "btn btn-danger", :data => {  :confirm => t(:are_you_sure )}
+    = link_to "Eliminar" , product_path(@product), :method => :delete , :class => "btn btn-danger", :data => {  :confirm => t(:are_you_sure )}
   -unless @product.product_item?
     .col-md-2
-      = link_to t(:new_item) , new_product_path( :parent_id => @product.id), :class => "btn btn-primary"
+      = link_to "Nuevo Producto" , new_product_path( :parent_id => @product.id), :class => "btn btn-primary"
   .col-md-6.product_show_row_end
 .product_show_end
