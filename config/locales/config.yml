@@ -6,4 +6,4 @@ config:
   defaults:
     tax: 0.0
   print_styles: ""
-  mail_buttons: "Confirmar Cancelar Pagado Enviado"
+  mail_buttons: "confirmar cancelar pagado enviado"
