@@ -1,11 +1,11 @@
 %li{:class => params[:controller] == "products" && "active" }
   = link_to "Productos", products_path
 %li{:class => params[:controller] == "baskets" && "active" }
-  = link_to "Compras", baskets_path
+  = link_to "Gastos", baskets_path
 %li{:class => params[:controller] == "orders" && "active" }
   = link_to "Ordenes", orders_path
 %li{:class => params[:controller] == "purchases" && "active" }
-  = link_to "Gastos", purchases_path
+  = link_to "Compras", purchases_path
 %li{:class => params[:controller] == "categories" && "active" }
   = link_to "Categorias", categories_path
 %li{:class => params[:controller] == "suppliers" && "active" }
