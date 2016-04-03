@@ -32,7 +32,7 @@
         .col-md-6
           = f.text_field :weight, :label => "Peso"
           = f.text_field :ean, :label => "Clave unica"
-          = f.text_field :tax, :class => "hide"
+          = f.text_field :tax, :label => "Taza de interes"
       .row
         .col-md-6
           = f.select :supplier_id,  Supplier.all.order(:supplier_name).map { |c| [c.supplier_name, c.id ] }, :prompt => "Selecciona", :label => "Proveedor"
