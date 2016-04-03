@@ -43,7 +43,7 @@
         .col-md-8
           = f.submit :class => "btn btn-success"
           -if @product.product_id
-            = link_to t(:cancel), product_path(@product.product), :class => "btn btn-warning"
+            = link_to "Cancelar", product_path(@product.product), :class => "btn btn-warning"
           -else
-            = link_to t(:cancel), products_path, :class => "btn btn-warning"
+            = link_to "Cancelar", products_path, :class => "btn btn-warning"
 .product_edit_end
