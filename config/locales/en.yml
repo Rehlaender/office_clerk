@@ -24,7 +24,7 @@ en:
         phone: Telefono
         street: Calle
       order:
-        canceled_on: Cancelado en
+        canceled_on: Cancelado el
         city: Ciudad y codigo postal
         email: Email
         name: Nombre completo
@@ -35,7 +35,7 @@ en:
         password: Contraseña
         password_confirmation: Confirme contraseña
         phone: Telefono
-        shipped_on: Enviado en
+        shipped_on: Entregado en
         street: Calle y numero
         total: Total
       product:
@@ -55,8 +55,8 @@ en:
         weight: Peso
       purchase:
         name: Nombre
-        ordered_on: Ordenado en
-        received_on: Reibido en
+        ordered_on: Ordenado el
+        received_on: Reibido el
       supplier:
         city: Ciudad
         name: Nombre
@@ -84,7 +84,7 @@ en:
   blanks: Vacios
   cancel: Cancelar
   cancel_confirmation: Cancelar regresara el stock y pondra en cero la fecha, puedes borrar la orden o seguir editando.
-  canceled_on: Cancelado en
+  canceled_on: Cancelado el
   categories: Categorias
   category: Categoria
   checkout: Chequeo
@@ -140,10 +140,10 @@ en:
   order_actions: Acciones
   order_button:
     cancel: Cancelar email
-    confirm: Enviar Email de confirmacion
+    confirm: Entregar Email de confirmacion
     paid: Pagado
-    shipped: Enviar email de orden
-  order_mail: Enviar email
+    shipped: Entregar email de orden
+  order_mail: Entregar email
   order_number: Numero de orden
   order_print: Imprimir
   ordered: Ordenado
@@ -172,11 +172,11 @@ en:
   scode: Codigo de proveedor
   search: Buscar
   select: Seleccionar
-  ship: Enviar
+  ship: Entregar
   shipment_info: Info de envio
   shipment_price: Precio de envio
   shipment_type: Tipo de envio
-  shipped_on: Enviado en
+  shipped_on: Entregado en
   shop: Tienda
   shop_link: En tienda
   show: Mostrar
