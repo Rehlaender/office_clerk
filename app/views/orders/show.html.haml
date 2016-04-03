@@ -108,7 +108,7 @@
     %b= t(:order_mail)
     %br
     - mail_actions.each do |action|
-      = link_to t("order_button.#{action}") , mail_order_path( @order , :act => action) , :class => "btn btn-info"
+      = link_to "Info de orden" , mail_order_path( @order , :act => action) , :class => "btn btn-info"
       \ 
 
 

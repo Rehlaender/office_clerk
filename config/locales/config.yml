@@ -2,8 +2,8 @@ config:
   shipping:
     pickup:
       class: "OfficeClerk::Pickup"
-      name: PICPI
+      name: Picpi
   defaults:
     tax: 0.0
   print_styles: ""
-  mail_buttons: "confirmar cancelar pagado enviado"
+  mail_buttons: "confirm cancel paid shipped"
