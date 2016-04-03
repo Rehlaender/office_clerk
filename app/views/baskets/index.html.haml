@@ -2,11 +2,11 @@
   .col-md-9.baskets
     .row
       .col-md-10
-        %h2= t(:baskets)
+        %h2= "Compras"
         = paginate @baskets
       .col-md-2
-        = link_to  t(:new) + ' ' + t(:basket) , new_basket_path , :class => "btn btn-primary"
-  .col-md-3    
+        = link_to  "Nueva Compra", new_basket_path , :class => "btn btn-primary"
+  .col-md-3
 .row
   .col-md-9
     %div
