@@ -5,9 +5,9 @@
         = t(@basket.kori_type.downcase)
 .row
   .col-md-8.ean_form
-    = label_tag :ean
+    = label_tag "Clave unica de producto"
     = form_tag ean_basket_path(@basket)  do |f|
-      = text_field_tag :ean , "" , :autofocus => true , :class => "ean_field" , :size => 45, :label => "Clave unica de producto a agregar"
+      = text_field_tag :ean , "" , :autofocus => true , :class => "ean_field" , :size => 45
       = submit_tag t(:search) ,  :class => "btn btn-xs ean_submit"
   .col-md-3
     = t(:discount )
@@ -63,7 +63,7 @@
           = link_to t(:to_order), order_path(@basket.kori), :class => "btn btn-primary to_order"
         .col-md-2
           - if has_receipt?
-            = link_to t("receipt.header"), receipt_order_path(@basket.kori), :class => "btn btn-primary print_order"
+            = link_to "Imprimir recibo", receipt_order_path(@basket.kori), :class => "btn btn-primary print_order"
       - elsif @basket.isa(:purchase)
         .col-md-2
           = link_to t(:to_purchase), purchase_path(@basket.kori), :class => "btn btn-primary to_purchase"
