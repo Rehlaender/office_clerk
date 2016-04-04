@@ -7,7 +7,7 @@
       .col-md-2
         = link_to  t(:new) + ' ' + t(:order) , new_order_path , :class => "btn btn-primary new_order"
   .col-md-3
-    
+
 .row
   .col-md-9
     %div
@@ -34,7 +34,7 @@
               %td.email= order.email
               %td.text-right= date(order.paid_on)
               %td.text-right= date(order.shipped_on)
-      .btn-toolbar
+      .btn-toolbar.hide
         .btn-group
           = paginate @orders
         .btn-group.pull-right
