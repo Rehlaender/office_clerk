@@ -55,9 +55,9 @@
         .col-md-1
           = link_to t(:make_order), order_basket_path(@basket), :class => "btn btn-primary make_order"
         .col-md-2
-          = link_to t(:make_purchase), purchase_basket_path(@basket), :class => "btn btn-primary make_purchase"
+          = link_to "Convertir en compra", purchase_basket_path(@basket), :class => "btn btn-primary make_purchase"
         .col-md-2
-          = link_to t(:checkout), checkout_basket_path(@basket) , :class => "btn btn-primary print_order"
+          = link_to "Convertir en orden", checkout_basket_path(@basket) , :class => "btn btn-primary print_order"
       - elsif @basket.isa(:order)
         .col-md-2
           = link_to t(:to_order), order_path(@basket.kori), :class => "btn btn-primary to_order"
