@@ -18,7 +18,7 @@
             %th= sort_link [:office,@q], :name
             %th= t(:count)
             %th= t(:online)
-            %th=t( "activerecord.attributes.category.category")
+            %th.hide=t( "activerecord.attributes.category.category")
             %th{:colspan => "3"}
               %label.checkbox
                 = @category_scope.length.to_s + " " +t(:categories)
@@ -29,7 +29,7 @@
               %td=link_to category.name, category_path(category), :title => t(:show) , :class => category.online && "online"
               %td=category.products.length.to_s
               %td=category.online ? t(:online) : t(:not_online)
-              %td=link_to category.category.name, category_path(category.category) , :class => category.category.online && "online" if category.category
+              %td.hide=link_to category.category.name, category_path(category.category) , :class => category.category.online && "online" if category.category
               %td= link_to t(:edit), edit_category_path(category), :title => t(:edit)
     = paginate @categories
   .col-md-3
