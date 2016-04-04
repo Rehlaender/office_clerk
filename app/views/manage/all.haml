@@ -1,7 +1,7 @@
 .row.manage_start
 .row.config
   .col-md-12
-  %h3 Config
+  %h3.hide Config
   .row.hide
     - conf = I18n.backend.send(:translations)[:config]
     = render "hash" , :config => conf if conf
