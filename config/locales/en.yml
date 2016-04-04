@@ -113,7 +113,7 @@ en:
   extra_picture: Foto extra
   filter: Filtro
   first_name: Primer nombre
-  fix_errors: Hay errores 
+  fix_errors: Hay errores
   inventorized: Se envio al inventario
   inventory: Inventario
   item_removed: Se quito del inventario
@@ -173,9 +173,9 @@ en:
   search: Buscar
   select: Seleccionar
   ship: Entregar
-  shipment_info: Info de envio
-  shipment_price: Precio de envio
-  shipment_type: Tipo de envio
+  shipment_info: Info de entrega
+  shipment_price: Precio de entrega
+  shipment_type: Tipo de entrega
   shipped_on: Entregado el
   shop: Tienda
   shop_link: En tienda
