@@ -3,6 +3,8 @@
 /vendor/bundle/
 /vendor/ruby/
 
+config/cloudinary.yml
+
 # minimal Rails specific artifacts
 *.sqlite3
 *.sqlite3-journal
