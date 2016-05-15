@@ -4,6 +4,8 @@ gem "office_clerk" , :path => "../"
 
 gem 'sqlite3'
 
+gem 'carrierwave'
+
 #asset / production reelated
 gem "therubyracer"
 gem "libv8" , "3.16.14.13"

@@ -90,6 +90,12 @@ GEM
     capybara-screenshot (1.0.11)
       capybara (>= 1.0, < 3)
       launchy
+    carrierwave (0.11.2)
+      activemodel (>= 3.2.0)
+      activesupport (>= 3.2.0)
+      json (>= 1.7)
+      mime-types (>= 1.16)
+      mimemagic (>= 0.3.0)
     climate_control (0.0.3)
       activesupport (>= 3.0)
     cocaine (0.5.8)
@@ -331,6 +337,7 @@ DEPENDENCIES
   binding_of_caller
   capybara
   capybara-screenshot
+  carrierwave
   codeclimate-test-reporter
   database_cleaner
   email_spec
@@ -347,6 +354,3 @@ DEPENDENCIES
   sqlite3
   therubyracer
   uglifier (>= 1.3.0)
-
-BUNDLED WITH
-   1.11.2

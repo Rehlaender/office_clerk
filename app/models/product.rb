@@ -7,13 +7,14 @@
 #                   shows prices relative to it's parent
 #
 # This makes the model a three headed one and validation is a little more complicated
-# - a product line _may not_ have an ean (as it can't be sold) 
+# - a product line _may not_ have an ean (as it can't be sold)
 # - a product and product line _must_ have a link , but  (those are generated if needed)
 # - line item _may not_ have a link (this is enforced, not validated)
 
 # attributes : see permitted_attributes + inventory + deleted_on
 
 class Product < ActiveRecord::Base
+  mount_uploader :main_picture, ImageUploader
   has_many :products
   has_many :items
   store :properties, accessors: [ :color, :size , :model_number ] #, coder: JSON
@@ -44,12 +45,12 @@ class Product < ActiveRecord::Base
   after_save :update_line_inventory , :if => :product_id
   after_save :check_parent_ean , :if => :product_id
 
-  
+
   def update_line_inventory
     parent = self.product
     return unless parent
     inv = parent.inventory
-    parent.inventory = parent.products.sum(:inventory) 
+    parent.inventory = parent.products.sum(:inventory)
     parent.save! if inv != parent.inventory
   end
 
@@ -57,7 +58,7 @@ class Product < ActiveRecord::Base
     parent = self.product
     return unless parent
     parent.check_attributes
-    parent.save! if parent.changed? 
+    parent.save! if parent.changed?
   end
 
   # if no url is set we generate one based on the name
@@ -117,7 +118,7 @@ class Product < ActiveRecord::Base
     !line?
   end
 
-  # full name, or display name, is the name for a product, 
+  # full name, or display name, is the name for a product,
   # and the concatination of the parents name and the name, for product items
   def full_name
     if product_item?
@@ -126,9 +127,9 @@ class Product < ActiveRecord::Base
       self.name
     end
   end
-  
+
   def new_product_item
-    Product.new :tax => self.tax , :weight => self.weight , :cost => self.cost ,  :product_id => self.id , 
+    Product.new :tax => self.tax , :weight => self.weight , :cost => self.cost ,  :product_id => self.id ,
         :supplier_id => self.supplier_id , :category_id => self.category_id , :price => self.price
   end
 
